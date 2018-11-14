@@ -7,6 +7,6 @@ class Anagram
   end
   
   def match(words)
-    
+    words.select {|x| x.split("").sort == @name.split("").sort}
   end
 end
